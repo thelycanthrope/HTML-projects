@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.content {
+  
+  margin: auto;
+width: 450px;
+height:260px;
+text-align:center;
+
+}
+ table.one {
+	border-collapse:collapse;
+	 border: 2px solid red;
+}
+ table.two {
+	border-collapse:collapse;
+	 border: 2px solid black;
+}
+table.three {
+	border-collapse:collapse;
+	 border: 2px solid blue;
+}
+table.four {
+	border-collapse:collapse;
+	 border: 2px solid blue;
+}
+ table.five {
+	border-collapse:collapse;
+	 border: 2px solid red;
+}
+table.six {
+	border-collapse:collapse;
+	 border: 2px solid black;
+}
+
+table.seven {
+	border-collapse:collapse;
+	 border: 2px solid black;
+}
+ table.eight {
+	border-collapse:collapse;
+	 border: 2px solid blue;
+}
+table.nine {
+	border-collapse:collapse;
+	 border: 2px solid red;
+}
+th, td {
+  padding: 1px;
+}
+
+
+h2{
+color:red;
+}
+body { 
+
+  background-color: Turquoise;
+	
+      	 } 
+.content{}
+input[id=constant]
+{
+
+background-color: #9ACD32;
+
+}
+input[type=text]{
+text-align:center;
+}
+label, division{
+ 
+   display : inline;
+}
+</style>
+</head>
+<body>
+<h2  align="center">SUDOKU</h2>  <br>
+<div align ="center"> 
+Mistakes : <input type="text" style="background-color:#40E0D0; color:black" size="3" id="counter" value="0" ></div><br>
+<div class="content" style="border:3px solid black;" >
+
+<br>
+            
+<!--1-->
+ <table class="one" style="display:inline-block;" >
+   <tr>
+    <td><input type="text" size="1" id="1" name="8" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="constant" color ="green" value="2" readonly></td>
+    <td><input type="text" size="1" id="2" name="7" onblur="myfun(id)"></td>
+    
+   </tr>
+
+   <tr>
+    <td><input type="text" size="1" id="constant" value="9" readonly></td>
+    <td><input type="text" size="1" id="3" name="6" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="4" name="5" onblur="myfun(id)"></td>
+    
+   </tr>
+
+<tr>
+    <td><input type="text" size="1" id="5" name="3" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="6" name="4" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="7" name="1" onblur="myfun(id)"></td>
+    
+   </tr>
+</table/><label>
+
+
+<!--2-->
+ <table class="two"  style="display:inline-block;">
+   <tr>
+    <td><input type="text" size="1" id="8" name="1" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="9" name="5" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="constant" value="4" readonly></td>
+    
+   </tr>
+
+   <tr>
+    <td><input type="text" size="1" id="10" name="3" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="constant" value="2" readonly></td>
+    <td><input type="text" size="1" id="11" name="7" onblur="myfun(id)"></td>
+    
+   </tr>
+
+<tr>
+    <td><input type="text" size="1" id="constant" value="   6" readonly></td>
+    <td><input type="text" size="1" id="12" name="8" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="constant" value="   9" readonly></td>
+    
+   </tr>
+</table>
+
+<!--3-->
+ <table class="three" style="display:inline-block;">
+   <tr>
+    <td><input type="text" size="1" id="constant" value="3" readonly></td>
+    <td><input type="text" size="1"  id="13" name="9" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="14" name="6" onblur="myfun(id)"> </td>
+    
+   </tr>
+
+   <tr>
+    <td><input type="text" size="1"  id="15" name="1" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="16" name="4" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="constant" value="8" readonly></td>
+    
+   </tr>
+
+<tr>
+    <td><input type="text" size="1"  id="17" name="7" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="constant" value="5" readonly></td>
+    <td><input type="text" size="1"  id="18" name="2" onblur="myfun(id)"></td>
+    
+   </tr>
+</table>
+
+<br>
+
+<!--4-->
+  <table class="four" style="display:inline-block;">
+   <tr>
+    <td><input type="text" size="1"  id="19" name="5" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="20" name="9" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="21" name="3" onblur="myfun(id)"></td>
+    
+   </tr>
+
+   <tr>
+    <td><input type="text" size="1"  id="22" name="4" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="constant" value="7" readonly></td>
+    <td><input type="text" size="1" id="constant" value="2" readonly></td>
+    
+   </tr>
+
+<tr>
+    <td><input type="text" size="1" id="constant" value="6" readonly></td>
+    <td><input type="text" size="1"  id="23" name="1" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="24" name="8" onblur="myfun(id)"></td>
+    
+   </tr>
+</table>
+
+
+<!--5-->
+ <table class="five" style="display:inline-block;">
+   <tr>
+    <td><input type="text" size="1"  id="25" name="4" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="26" name="6" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="27" name="8" onblur="myfun(id)"></td>
+    
+   </tr>
+
+   <tr>
+    <td><input type="text" size="1" id="constant" value="5" readonly></td>
+    <td><input type="text" size="1"  id="28" name="1" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="constant" value="3" readonly></td>
+    
+   </tr>
+
+<tr>
+    <td><input type="text" size="1"  id="29" name="9" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="30" name="7" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="31" name="2" onblur="myfun(id)"></td>
+    
+   </tr>
+</table>
+
+<!--6-->
+ <table class="six" style="display:inline-block;">
+   <tr>
+    <td><input type="text" size="1"  id="32" name="2" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="33" name="7" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="constant" value="1" readonly></td>
+    
+   </tr>
+
+   <tr>
+    <td><input type="text" size="1" id="constant" value="6" readonly></td>
+    <td><input type="text" size="1" id="constant" value="8" readonly></td>
+    <td><input type="text" size="1"  id="34" name="9" onblur="myfun(id)"></td>
+    
+   </tr>
+
+<tr>
+    <td><input type="text" size="1"  id="35" name="4" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="36" name="3" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="37" name="5" onblur="myfun(id)"></td>
+    
+   </tr>
+</table>
+
+<br>
+
+<!--7-->
+  <table class="seven" style="display:inline-block;">
+   <tr>
+    <td><input type="text" size="1"   id="38" name="7" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="constant" value="8" readonly></td>
+    <td><input type="text" size="1"  id="39" name="6" onblur="myfun(id)"></td>
+    
+   </tr>
+
+   <tr>
+    <td><input type="text" size="1" id="constant" value="1" readonly></td>
+    <td><input type="text" size="1"  id="40" name="5" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="41" name="4" onblur="myfun(id)"></td>
+    
+   </tr>
+
+<tr>
+    <td><input type="text" size="1"   id="42" name="2" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="43" name="3" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="constant" value="9" readonly></td>
+    
+   </tr>
+</table>
+
+
+<!--8-->
+ <table class="eight" style="display:inline-block;">
+   <tr>
+    <td><input type="text" size="1" id="constant" value="2" readonly></td>
+    <td><input type="text" size="1"  id="44" name="3" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="constant" value="5" readonly</td>
+    
+   </tr>
+
+   <tr>
+    <td><input type="text" size="1"  id="45" name="7" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="constant" value="   9" readonly></td>
+    <td><input type="text" size="1"  id="46" name="6" onblur="myfun(id)"></td>
+    
+   </tr>
+
+<tr>
+    <td><input type="text" size="1" id="constant" value="8" readonly></td>
+    <td><input type="text" size="1"  id="47" name="4" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="48" name="1" onblur="myfun(id)"></td>
+    
+   </tr>
+</table>
+
+<!--9-->
+ <table class="nine" style="display:inline-block;">
+   <tr>
+    <td><input type="text" size="1"  id="49" name="9" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="50" name="1" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="51" name="4" onblur="myfun(id)"></td>
+    
+   </tr>
+
+   <tr>
+    <td><input type="text" size="1"  id="52" name="8" onblur="myfun(id)"></td>
+    <td><input type="text" size="1"  id="53" name="2" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="constant" value="3" readonly></td>
+    
+   </tr>
+
+<tr>
+    <td><input type="text" size="1"  id="54" name="5" onblur="myfun(id)"></td>
+    <td><input type="text" size="1" id="constant" value="6" readonly></td>
+    <td><input type="text" size="1"  id="55" name="7" onblur="myfun(id)"></td>
+    
+   </tr>
+</table>
+</div>
+
+<br>
+<br>
+<h2>RULES FOR SUDOKU</h2>
+1.Each row, column, and nonet can contain each number (typically 1 to 9) exactly once.<br>
+2.Sum of any row/coloumn/nonet is 45.<br>
+3.Cells which are in light green color are fixed .<input size="1"style="background-color:#9ACD32;"><br>
+4.If your entered value is correct cell will turn green else it will turn red.<br>
+5.For confirming your entered value is correct or not click on any fixed cell. <br> 
+<mark style="color:#FFFFFF;background-color:#FF0000; font-weight:bold; font-size:15px;">6.You have <mark>3</mark> chances.If 3 times cell turns red game will be over.</mark>
+
+
+<script>
+var count=0;
+var cell=0;
+
+function myfun(id){
+var txt1 = document.getElementById(id);
+var c = document.getElementById("counter");
+if(txt1.value==="")
+{
+ txt1.style.background = "#FFFFFF"; 
+}
+else{
+if(txt1.value===txt1.name)
+{
+
+cell++;
+txt1.style.color="white";
+ txt1.style.background = "#008000"; 
+}
+
+else 
+{
+count++;
+txt1.style.color="white";
+ txt1.style.background = "#FF0000"; 
+c.value=count;
+}       
+ if(count>3)
+{
+location.replace("file:///C:/Users/AN20066262/Desktop/project/SUDOKU/game_over.html");
+}
+if(cell>=26)
+{
+location.replace("file:///C:/Users/AN20066262/Desktop/project/SUDOKU/winner.html");
+}}
+}
+</script>
+
+</body>
+</html>

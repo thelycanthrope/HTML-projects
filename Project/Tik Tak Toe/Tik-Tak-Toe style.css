@@ -1,0 +1,21 @@
+
+input[type=text]{
+text-align:center;
+}
+
+.content {
+  
+  margin: auto;
+width: 189px;
+height:185px;
+text-align:center;
+
+}
+input[type=text]{
+height:50px;
+width:50px;
+font-size:18pt;
+}
+h2{
+color:red;
+}

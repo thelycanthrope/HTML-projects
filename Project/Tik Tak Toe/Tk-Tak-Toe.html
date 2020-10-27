@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="Tik-Tak-Toe style.css">
+<body>
+<h2 align="center">TIK TAK TOE</h2>
+
+<div class="k" align="center">
+<strong>&nbsp &nbsp &nbsp &nbsp X  &nbsp   &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp  &nbsp   O  &nbsp   &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp  &nbsp &nbsp      Draw  &nbsp   &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp  &nbsp &nbsp      TOTAL</strong><br>
+<input size ="2" id="X" value="0" readonly></input>&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp<input size ="2" id="O" value="0" readonly></input>          
+&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp<input size ="2" id="D" value="0" readonly></input>&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp &nbsp <input size ="2" id="T" value="0" readonly></input>         
+
+
+</div>
+<br>
+<div class="content" style="border:3px solid black;" id="game">
+
+<table class="one" style="display:inline-block;" >
+   <tr>
+    <td><input type="text" size="1" id="1"  onfocus="myfun(this)"></td>
+    <td><input type="text" size="1" id="2"  onfocus="myfun(this)" ></td>
+    <td><input type="text" size="1" id="3"  onfocus="myfun(this)" ></td>
+   </tr>
+
+   <tr>
+    <td><input type="text" size="1" id="4"  onfocus="myfun(this)" ></td>
+    <td><input type="text" size="1" id="5"   onfocus="myfun(this)" ></td>
+    <td><input type="text" size="1" id="6"  onfocus="myfun(this)" ></td>
+   </tr>
+
+<tr>
+    <td><input type="text" size="1" id="7"  onfocus="myfun(this)" ></td>
+    <td><input type="text" size="1" id="8"  onfocus="myfun(this)" ></td>
+    <td><input type="text" size="1" id="9"  onfocus="myfun(this)" ></td>
+   </tr>
+</table>
+<br><br><p></p>
+<br><br><p></p>
+<input type=button value="Restart" onfocus=location.reload()>
+</div>
+<div id="mydiv" align="center">
+
+
+</div>
+
+</body>
+<script  src="Tik-Tak-Toe script.js"></script>
+</html>

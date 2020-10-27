@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chess</title>
+    <h1 align="center">CHESS</h1>
+  </head>
+<link rel="stylesheet" href="style.css">
+  <body>
+<div align="center">
+<table style="width:40%" border="1px solid black" id="killed">
+  <tr>
+    <th colspan="2" id="rook">Rook</th>
+    <th colspan="2" id="knight">Knight</th> 
+    <th colspan="2" id="bishop">Bishop</th>
+    <th colspan="2" id="queen">Queen</th>
+    <th colspan="2" id="pawn">Pawn</th> 
+  </tr>
+  <tr>
+    <td id="b">W</td>
+    <td id="w">W</td>
+    <td id="b">W</td>
+    <td id="w">W</td>
+    <td id="b">W</td>
+    <td id="w">W</td>
+    <td id="b">W</td>
+    <td id="w">W</td>
+    <td id="b">W</td>
+    <td id="w">W</td>
+  </tr>
+  <tr>
+   
+    <td >0</td>
+    <td id="kp">0</td>
+    <td>0</td>
+    <td id="kp">0</td>
+    <td>0</td>
+    <td id="kp">0</td>
+    <td>0</td>
+    <td id="kp">0</td>
+    <td>0</td>
+    <td id="kp">0</td>
+  </tr>
+</table>
+
+</div>
+<br>
+ <div class ="spacing" align="center"  id="mydiv">
+<p></p>
+
+      <input type="text"  id="a8" name="w" onclick="myFunction()" readOnly ><input type="text" name="b"  id ="b8"  onclick="myFunction()" readOnly><input type="text" id="c8" name="w"  onclick="myFunction()" readOnly><input type="text" name="b" id="d8"  onclick="myFunction()" readOnly><input type="text"  id="e8" name="w"  onclick="myFunction()" readOnly><input type="text" name="b" id="f8"  onclick="myFunction()" readOnly><input type="text" id ="g8" name="w"  onclick="myFunction()" readOnly><input type="text" name="b" id="h8" onclick="myFunction()" readOnly>
+<br>
+       <input type="text" name="b" id="a7"  onclick="myFunction()" readOnly><input type="text" id="b7" name="w"  onclick="myFunction()" readOnly><input type="text" name="b" id="c7"  onclick="myFunction()" readOnly><input type="text" id="d7" name="w"  onclick="myFunction()" readOnly><input type="text" name="b" id="e7"  onclick="myFunction()" readOnly><input type="text" id="f7" name="w"  onclick="myFunction()" readOnly><input type="text" name="b" id="g7"  onclick="myFunction()" readOnly><input type="text" id="h7" name="w"  onclick="myFunction()" readOnly>
+<br>
+<input type="text" name="w" id="a6"  onclick="myFunction()"  readOnly><input type="text" name="b" id="b6"  onclick="myFunction()" readOnly><input type="text" name="w" id="c6"  onclick="myFunction()" readOnly><input type="text" name="b" id="d6" onclick="myFunction()"  readOnly><input type="text" name="w" id="e6"  onclick="myFunction()" readOnly><input type="text" name="b" id="f6" onclick="myFunction()"  readOnly><input type="text" name="w" id="g6"  onclick="myFunction()" readOnly><input type="text" name="b" id="h6"  onclick="myFunction()" readOnly>
+<br>
+       <input type="text" name="b" id="a5"  onclick="myFunction()" readOnly><input type="text" name="w" id="b5"  onclick="myFunction()" readOnly><input type="text" name="b" id="c5"  onclick="myFunction()" readOnly><input type="text" name="w" id="d5"  onclick="myFunction()" readOnly><input type="text" name="b" id="e5"  onclick="myFunction()" readOnly><input type="text" name="w" id="f5" onclick="myFunction()"  readOnly><input type="text" name="b" id="g5" onclick="myFunction()"  readOnly><input type="text" name="w" id="h5"  onclick="myFunction()" readOnly>
+<br>
+      <input type="text" name="w" id="a4"   onclick="myFunction()" readOnly><input type="text" name="b" id="b4"  onclick="myFunction()" readOnly><input type="text" name="w" id="c4"  onclick="myFunction()" readOnly><input type="text" name="b" id="d4" onclick="myFunction()" readOnly><input type="text" name="w" id="e4"  onclick="myFunction()" readOnly><input type="text" name="b" id="f4" onclick="myFunction()"  readOnly><input type="text" name="w" id="g4"  onclick="myFunction()" readOnly><input type="text" name="b" id="h4"  onclick="myFunction()" readOnly>
+<br>
+       <input type="text" name="b" id="a3" onclick="myFunction()"  readOnly><input type="text" name="w" id="b3" onclick="myFunction()"  readOnly><input type="text" name="b" id="c3" onclick="myFunction()"  readOnly><input type="text" name="w" id="d3"  onclick="myFunction()" readOnly><input type="text" name="b" id="e3"  onclick="myFunction()" readOnly><input type="text" name="w" id="f3" onclick="myFunction()"  readOnly><input type="text" name="b" id="g3" onclick="myFunction()"  readOnly><input type="text" name="w" id="h3"  onclick="myFunction()" readOnly>
+<br>
+       <input type="text"  id="a2" name="w" onclick="myFunction()"  readOnly><input type="text" name="b" id="b2" onclick="myFunction()"  readOnly><input type="text" id="c2" name="w" onclick="myFunction()"  readOnly><input type="text" name="b" id="d2" onclick="myFunction()"  readOnly><input type="text" id="e2" name="w" onclick="myFunction()" readOnly><input type="text" name="b" id="f2"  onclick="myFunction()" readOnly><input type="text" id="g2" name="w" onclick="myFunction()"  readOnly><input type="text" name="b" id="h2"  onclick="myFunction()" readOnly>
+<br>
+       <input type="text" name="b" id="a1" onclick="myFunction()"  readOnly><input type="text" id="b1" name="w"  onclick="myFunction()" readOnly><input type="text" name="b" id="c1"  onclick="myFunction()" readOnly><input type="text" id="d1" name="w" onclick="myFunction()"  readOnly><input type="text" name="b" id="e1"  onclick="myFunction()" readOnly><input type="text" id="f1" name="w"  onclick="myFunction()" readOnly><input type="text" name="b" id="g1"  onclick="myFunction()" readOnly><input type="text" id="h1" name="w" onclick="myFunction()" readOnly>
+
+</div>
+  </body>
+
+<script  src="chess style script.js"></script>
+<script  src="chess script.js"></script>
+
+
+
+</html>

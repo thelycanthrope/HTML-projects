@@ -1,0 +1,62 @@
+table, th, td {
+ 
+ 
+text-align:center;
+}
+
+table[id="killed"]{
+border:4px solid black;
+}
+
+th[id="rook"]{
+border:2px solid black;
+}
+th[id="bishop"]{
+border:3px solid black;
+}
+th[id="pawn"]{
+border:3px solid black;
+}
+#b{
+background-color: #000000;
+}
+#w
+{
+color:white;
+}
+td[id="kp"]
+{
+border:  outset ;
+}
+ 
+
+h1{
+color: #6a5acd;}
+
+  .spacing{
+	border : 3px solid black;
+	margin:auto;
+	width: 650px;
+	height:650px;
+    }
+
+input[name=b] {
+	 background-color: #797979;
+background-repeat: no-repeat;
+	height:70px;
+width:70px;
+ background-position : center
+ 
+
+}
+
+input[name=w] {
+
+  background-color: #E8E3E3;
+background-repeat: no-repeat;
+height:70px;
+width:70px;
+ background-position : center
+}
+
+   
